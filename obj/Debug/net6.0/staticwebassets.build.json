@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "qD4fSgiOetkK+G9ut3GiWgP7AkE8IPGMWcvbRMC1A8s=",
+  "Source": "secure-api",
+  "BasePath": "_content/secure-api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
