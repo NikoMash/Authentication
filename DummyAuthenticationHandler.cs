@@ -34,22 +34,39 @@ public class DummyAuthenticationHandler : AuthenticationHandler<AuthenticationSc
 
         string salt = Convert.ToBase64String(saltBytes); 
 
+        //hash og salt af forventede passwords fra headeren 
+        string adminPassword = "password123";
+        string hashedAdminPassword = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+            password: adminPassword,
+            salt: Convert.FromBase64String(salt),
+            prf: KeyDerivationPrf.HMACSHA256,
+            iterationCount: 100000,
+            numBytesRequested: 256 / 8));
+
+        string cakePassword = "cake123";
+        string hashedCakePassword = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+            password: cakePassword,
+            salt: Convert.FromBase64String(salt),
+            prf: KeyDerivationPrf.HMACSHA256,
+            iterationCount: 100000,
+            numBytesRequested: 256 / 8));
+
         // Vi fisker en header ud hvor key er "Authorization"
         var authHeader = Request.Headers["Authorization"].ToString();
 
-        // Vi tjekker efterfølgende på om "Authorization" findes, og på om dens value starter med "Password".
-        if (authHeader != null && authHeader.StartsWith("Password", StringComparison.OrdinalIgnoreCase))
-        {
-            var password = authHeader.Substring("Password ".Length).Trim();
-            string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
+        var password = authHeader.Substring("Password ".Length).Trim();
+            string hashedIncoming = Convert.ToBase64String(KeyDerivation.Pbkdf2(
                 password: password,
                 salt: Convert.FromBase64String(salt),
                 prf: KeyDerivationPrf.HMACSHA256,
                 iterationCount: 100000,
                 numBytesRequested: 256 / 8));
-                Console.WriteLine(hashed);
+
+        // Vi tjekker efterfølgende på om "Authorization" findes, og på om dens value starter med "Password".
+        if (authHeader != null && authHeader.StartsWith("Password", StringComparison.OrdinalIgnoreCase))
+        {                
             // Nu tjekkes om password er korrekt
-            if (hashed == hashed)
+            if (hashedIncoming == hashedAdminPassword)
             {
                 // Vi opretter et "claim"
                 var claims = new[] { new Claim("Role", "Admin") };
@@ -65,10 +82,8 @@ public class DummyAuthenticationHandler : AuthenticationHandler<AuthenticationSc
 
         if (authHeader != null && authHeader.StartsWith("Password", StringComparison.OrdinalIgnoreCase))
         {
-            var password = authHeader.Substring("Password ".Length).Trim();
-
             // Nu tjekkes om password er korrekt
-            if (password == "cake123")
+            if (hashedIncoming == hashedCakePassword)
             {
                 // Vi opretter et "claim"
                 var claims = new[] { new Claim("Role", "CakeLover") };

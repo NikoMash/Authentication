@@ -52,3 +52,30 @@ C:\Users\Nikos\School projs\Softark\unsecure-api\obj\Debug\net6.0\refint\secure-
 C:\Users\Nikos\School projs\Softark\unsecure-api\obj\Debug\net6.0\secure-api.pdb
 C:\Users\Nikos\School projs\Softark\unsecure-api\obj\Debug\net6.0\secure-api.genruntimeconfig.cache
 C:\Users\Nikos\School projs\Softark\unsecure-api\obj\Debug\net6.0\ref\secure-api.dll
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.csproj.AssemblyReference.cache
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.AssemblyInfoInputs.cache
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.AssemblyInfo.cs
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.csproj.CoreCompileInputs.cache
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.dll
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\refint\secure-api.dll
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.pdb
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\secure-api.exe
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\secure-api.deps.json
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\secure-api.runtimeconfig.json
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\secure-api.dll
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\secure-api.pdb
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Bruger\Authentication\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\scopedcss\bundle\secure-api.styles.css
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.csproj.CopyComplete
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\secure-api.genruntimeconfig.cache
+C:\Users\Bruger\Authentication\obj\Debug\net6.0\ref\secure-api.dll

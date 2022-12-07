@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nikos\\School projs\\Softark\\unsecure-api\\secure-api.csproj": {}
+    "C:\\Users\\Bruger\\Authentication\\secure-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nikos\\School projs\\Softark\\unsecure-api\\secure-api.csproj": {
+    "C:\\Users\\Bruger\\Authentication\\secure-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nikos\\School projs\\Softark\\unsecure-api\\secure-api.csproj",
+        "projectUniqueName": "C:\\Users\\Bruger\\Authentication\\secure-api.csproj",
         "projectName": "secure-api",
-        "projectPath": "C:\\Users\\Nikos\\School projs\\Softark\\unsecure-api\\secure-api.csproj",
-        "packagesPath": "C:\\Users\\Nikos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nikos\\School projs\\Softark\\unsecure-api\\obj\\",
+        "projectPath": "C:\\Users\\Bruger\\Authentication\\secure-api.csproj",
+        "packagesPath": "C:\\Users\\Bruger\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Bruger\\Authentication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nikos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Bruger\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
